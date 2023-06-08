@@ -6,33 +6,79 @@
 
 body {
   font-family: sans-serif;
+  background-color: #ced4da;
+}
+
+/*****************************/
+/* HEADER*/
+/*****************************/
+
+header {
+  background-image: url("../joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg");
+  background-size: contain;
 }
 
 header h1 {
+  font-style: italic;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1%;
-  background-color: #13293d;
-  color: #fff;
+  /* background-color: #13293d; */
+  color: #f3d9fa;
 }
 
 header ul {
   display: flex;
   justify-content: space-evenly;
   padding: 3%;
-  background-color: #13293d;
-  color: #fff;
+  margin-top: 2%;
+  /* background-color: #13293d; */
+  /* color: #f3d9fa; */
 }
+
+/*****************************/
+/* NAVIGATION */
+/*****************************/
 
 nav ul {
   list-style-type: none;
+}
+
+nav li a:hover {
   cursor: pointer;
+  text-decoration: underline;
+  color: #fff;
 }
 
 header li a {
   text-decoration: none;
-  color: white;
+  color: #f3d9fa;
+}
+
+/*****************************/
+/* BODY */
+/*****************************/
+
+.me {
+  background-image: url("../me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2% auto 0% 40%;
+  max-width: 350px;
+  height: auto;
+  padding-bottom: 40%;
+}
+
+.big {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.three {
+  background-image: url("../laptop-blue.jpg");
+  background-size: 100%;
+  background-size: 100% 300px;
 }
 
 section {
@@ -42,9 +88,8 @@ section {
   padding: 3%;
 }
 
-.big {
-  grid-column-start: 1;
-  grid-column-end: 3;
+section {
+  padding: 5% 10%;
 }
 
 section div {
@@ -57,19 +102,19 @@ section div {
 }
 
 button {
-  background-color: green;
   padding: 25px;
-  border-radius: 11px;
+  border-radius: 100px;
+}
+
+button a {
+  color: black;
 }
 
 button:hover {
   cursor: pointer;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
-  border-radius: 11px;
-
-  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
-
-  overflow: hidden;
+  border-radius: 95px;
+  background-image: transparent;
 }
 
 .about h2 {
@@ -80,12 +125,47 @@ button:hover {
   border-right: 1px dotted black;
   height: 100%;
 }
+
 .contact h2 {
+  color: #eebefa;
   border-right: 1px dotted black;
   height: 100%;
 }
 
-footer ul {
+.contact {
+  background-color: #13293d;
+}
+
+section ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 10% 2%;
+  margin-top: 2%;
+  color: #fff;
+}
+
+section ul {
+  list-style-type: none;
+}
+
+section li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*****************************/
+/* MEDIA */
+/*****************************/
+
+@media (max-width: 1300px) {
+  section ul {
+    display: inline-block;
+    font-size: 15px;
+    transition: all 0.4s ease;
+  }
 }
