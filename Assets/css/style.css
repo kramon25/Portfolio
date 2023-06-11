@@ -64,33 +64,26 @@ header li a {
   background-image: url("../me.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  /* position: relative; */
   margin: 2% auto 0% 40%;
   max-width: 350px;
   height: auto;
+  padding-top: 15%;
   padding-bottom: 40%;
   opacity: 0.7;
-}
-
-.big {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.three {
-  background-image: url("../laptop-blue.jpg");
-  background-size: 100%;
-  background-size: 100% 300px;
+  border-radius: 25%;
 }
 
 section {
   display: grid;
   grid-template-columns: 200px 1fr;
   column-gap: 100px;
-  padding: 3%;
+  padding: 5% 10%;
 }
 
 section {
-  padding: 5% 10%;
+  padding-top: 10%;
 }
 
 section div {
@@ -100,45 +93,6 @@ section div {
   grid-auto-rows: 300px;
   gap: 20px;
   padding-left: 15%;
-}
-
-button {
-  padding: 25px;
-  border-radius: 100px;
-  opacity: 0.9;
-}
-
-button a {
-  color: #000000;
-}
-
-button:hover {
-  cursor: pointer;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
-  border-radius: 95px;
-  background-image: transparent;
-}
-
-.about h2 {
-  border-right: 1px dotted black;
-  height: 100%;
-  color: #eebefa;
-}
-
-.work h2 {
-  color: #eebefa;
-  border-right: 1px dotted black;
-  height: 100%;
-}
-
-.contact h2 {
-  color: #eebefa;
-  border-right: 1px dotted black;
-  height: 100%;
-}
-
-.contact {
-  background-color: #13293d;
 }
 
 section ul {
@@ -161,6 +115,62 @@ section li a {
 section li:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.about h2 {
+  border-right: 1px dotted black;
+  height: 100%;
+  color: #fff;
+}
+
+.work h2 {
+  color: #fff;
+  border-right: 1px dotted black;
+  height: 100%;
+}
+
+.contact h2 {
+  color: #eebefa;
+  border-right: 1px dotted black;
+  height: 100%;
+}
+
+.contact {
+  background-color: #13293d;
+}
+
+/*****************************/
+/* Buttons */
+/*****************************/
+
+button {
+  padding: 25px;
+  border-radius: 100px;
+  opacity: 0.9;
+}
+
+button a {
+  color: #000000;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 95px;
+  background-image: transparent;
+}
+
+.big {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+button {
+  background-image: url("../placeholder.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
 }
 
 /*****************************/
