@@ -153,6 +153,14 @@ button a {
   color: #000000;
 }
 
+button {
+  background-image: url("../placeholder.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+}
+
 button:hover {
   cursor: pointer;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
@@ -163,14 +171,6 @@ button:hover {
 .big {
   grid-column-start: 1;
   grid-column-end: 3;
-}
-
-button {
-  background-image: url("../placeholder.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  background-position: center;
 }
 
 /*****************************/
